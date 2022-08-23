@@ -18,14 +18,11 @@ const selectedButtons = document.querySelectorAll('.btn');
 
                 playerList.appendChild(li);
                 button.setAttribute('disabled', true) ;
-
-            }
-            
-        }); 
-               
+            }   
+        });          
     };
 
-        // Calculation Part start from here ------
+        // ------------- Calculation Part start from here ------
 
     document.getElementById('cal-btn').addEventListener('click', function(){
         const perPlayerFieldElement = document.getElementById('per-player-element');
@@ -41,20 +38,18 @@ const selectedButtons = document.querySelectorAll('.btn');
         
     });
     
-    // ----------common function used---------- 
+    // ----------Common function used---------- 
     function getFieldElement(elementId){
-        const managerExpenseField = document.getElementById(elementId);
-        const managerExpenseString = managerExpenseField.value ;
-        const managerExpensevalue = parseFloat(managerExpenseString);
+        const otherExpenseField = document.getElementById(elementId);
+        const otherExpenseString = otherExpenseField.value ;
+        const otherExpenseValue = parseFloat(otherExpenseString);
 
-        const coachExpenseField = document.getElementById(elementId);
-        const coachExpenseString = coachExpenseField.value ;
-        const coachExpenseValue = parseFloat(coachExpenseString);
+        // const coachExpenseField = document.getElementById(elementId);
+        // const coachExpenseString = coachExpenseField.value ;
+        // const coachExpenseValue = parseFloat(coachExpenseString);
 
-        return managerExpensevalue, coachExpenseValue;
-
+        return otherExpenseValue;
     };
-
 
     document.getElementById('total-cal-btn').addEventListener('click', function(){
         const playerExpense = document.getElementById('player-expense');
@@ -67,14 +62,9 @@ const selectedButtons = document.querySelectorAll('.btn');
         const totalExpenses = playerExpenseNumber + managerExpense + coachExpense;
         const totalExpensesNumber = parseFloat(totalExpenses);
 
-        // console.log(totalExpensesNumber);
-
         const totalElement = document.getElementById('total');
-        totalElement.innerText = totalExpensesNumber;
-
-        
+        totalElement.innerText = totalExpensesNumber;   
     });
-
      // ----------Calculation Part ends here ------
 
     
