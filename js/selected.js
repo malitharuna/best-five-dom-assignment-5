@@ -6,18 +6,23 @@ const selectedButtons = document.querySelectorAll('.btn');
            
             let playerName = button.parentNode.parentNode.childNodes[1].innerText;
          
-            nameArr.push(playerName);
-            if(nameArr.length >= 6){
+            if(nameArr.length >= 5){
                 alert('Dont add more than Five players')
             }
             else{
                 const playerList = document.getElementById('players-list');
                 const li = document.createElement('li');
                 li.innerText = playerName;
+
+                nameArr.push(playerName);
+
                 playerList.appendChild(li);
                 button.setAttribute('disabled', true) ;
+
             }
-        });        
+            
+        }); 
+               
     };
 
         // Calculation Part start from here ------
