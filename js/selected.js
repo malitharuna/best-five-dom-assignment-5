@@ -21,11 +21,25 @@ const selectedButtons = document.querySelectorAll('.btn');
     };
 
 
+
     document.getElementById('cal-btn').addEventListener('click', function(){
-        document.getElementById('')
+        const perPlayerFieldElement = document.getElementById('per-player-element');
+        const fieldElementString = perPlayerFieldElement.value ;
+        const fieldElementNumber = parseFloat(fieldElementString);
 
+        const totalElement = fieldElementNumber * nameArr.length;
+        
+        const playerExpense =  document.getElementById('player-expense');
+        // console.log(playerExpense);
+        playerExpense.innerText = totalElement;
 
+     
     });
+    
+
+    document.getElementById('total-cal-btn').addEventListener('click', function(){
+        document.getElementById('')
+    })
 
     
 
