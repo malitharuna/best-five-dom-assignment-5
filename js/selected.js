@@ -20,7 +20,7 @@ const selectedButtons = document.querySelectorAll('.btn');
         });        
     };
 
-
+        // Calculation Part start from here ------
 
     document.getElementById('cal-btn').addEventListener('click', function(){
         const perPlayerFieldElement = document.getElementById('per-player-element');
@@ -28,18 +28,49 @@ const selectedButtons = document.querySelectorAll('.btn');
         const fieldElementNumber = parseFloat(fieldElementString);
 
         const totalElement = fieldElementNumber * nameArr.length;
-        
+          
         const playerExpense =  document.getElementById('player-expense');
         // console.log(playerExpense);
         playerExpense.innerText = totalElement;
 
-     
+        
     });
     
+    // ----------common function used---------- 
+    function getFieldElement(elementId){
+        const managerExpenseField = document.getElementById(elementId);
+        const managerExpenseString = managerExpenseField.value ;
+        const managerExpensevalue = parseFloat(managerExpenseString);
+
+        const coachExpenseField = document.getElementById(elementId);
+        const coachExpenseString = coachExpenseField.value ;
+        const coachExpenseValue = parseFloat(coachExpenseString);
+
+        return managerExpensevalue, coachExpenseValue;
+
+    };
+
 
     document.getElementById('total-cal-btn').addEventListener('click', function(){
-        document.getElementById('')
-    })
+        const playerExpense = document.getElementById('player-expense');
+        const playerExpenseString = playerExpense.innerText;
+        const playerExpenseNumber = parseFloat(playerExpenseString);
+        
+        const managerExpense = getFieldElement('manager-expense');
+        const coachExpense = getFieldElement('coach-expense');
+
+        const totalExpenses = playerExpenseNumber + managerExpense + coachExpense;
+        const totalExpensesNumber = parseFloat(totalExpenses);
+
+        // console.log(totalExpensesNumber);
+
+        const totalElement = document.getElementById('total');
+        totalElement.innerText = totalExpensesNumber;
+
+        
+    });
+
+     // ----------Calculation Part ends here ------
 
     
 
