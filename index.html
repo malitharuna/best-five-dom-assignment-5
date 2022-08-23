@@ -13,15 +13,15 @@
 </head>
 <body class="bg-primary">
     <!-- banner section start  -->
-    <section class="bg-black mb-10 flex pt-10">
-      <div class="m-0">
+    <section class="bg-black mb-10 flex pt-10 font-serif">
+      <div class=" ">
         <img src="images/Group 12.png" alt="">
       </div>
       <div class="text-center">
         <h1 class="font-bold text-6xl  text-yellow-600">Top Paying Players</h1>
-        <!-- <img src="images/Line Marker.png" alt=""> -->
-        <p class=" text-white p-8 ">FOOTBALL IS UNDOUBTEDLY !! the most popular sport in world (even if some people call it soccer - we'll forgive them).
-          It's estimated to reach more than 3.5 billion fans. Cricket is the only one that comes close with 2.5 billion.</p>
+      
+        <p class=" text-white p-10 font-semibold">FOOTBALL IS UNDOUBTEDLY !! the most popular sport in world (even if some people call it soccer - we'll forgive them).
+          It's estimated to reach more than 3.5 billion fans. Cricket is the only one that comes close with 2.5 billion. Come to Know that, In USA people call it soccer</p>
       </div>
       <div class="relative">
         <img class=" absolute bottom-0 left-0" src="images/Rectangle 57.png" alt="">
@@ -39,7 +39,7 @@
                             <figure><img src="images/Rectangle 144 (2).png" alt="Kylian Mbappé" /></figure>
                             <div class="card-body">
                               <h2 class="card-title"> Kylian Mbappé </h2>
-                              <p class="flex justify-around"><small class="">Goals: 36  </small> . <small>Assist: 120</small></p>
+                              <p class="flex justify-around"><small class="">Goals: 43  </small> . <small>Assist: 90</small></p>
                               <div class="card-actions justify-center ">
                                 <button class="btn btn-primary px-14 pt-px rounded-sm font-semibold">Select</button>
                               </div>
@@ -87,7 +87,7 @@
                             <figure><img src="images/Rectangle 144 (4).png" alt="Sergio Ramos" /></figure>
                             <div class="card-body">
                               <h2 class="card-title"> Sergio Ramos </h2>
-                              <p class="flex justify-around"><small class="">Goals: 36  </small> . <small>Assist: 120</small></p>
+                              <p class="flex justify-around"><small class="">Goals: 33  </small> . <small>Assist: 80</small></p>
                               <div class="card-actions justify-center ">
                                 <button class="btn btn-primary px-14 pt-px rounded-sm font-semibold">Select</button>
                               </div>
@@ -108,7 +108,7 @@
                     </div>
                     <div>
                         <div class="card bg-black text-white shadow-xl rounded-sm card-compact bg-base-100 border-2">
-                            <figure><img class="h-32" src="images/KarimBenzema.jpg" alt="Karim Benzema" /></figure>
+                            <figure class="h-32 w-full"><img  src="images/KarimBenzema.jpg" alt="Karim Benzema" /></figure>
                             <div class="card-body">
                               <h2 class="card-title"> Karim Benzema </h2>
                               <p class="flex justify-around"><small class="">Goals: 36  </small> . <small>Assist: 120</small></p>
@@ -141,20 +141,19 @@
                     </div> 
                      <!-- selected five divv end  -->
 
-                     <!-- calculation start  -->
+                     <!-- calculation divv start  -->
                     <div class="mt-6 py-3 bg-black " >
                       <h1 class=" text-center font-bold text-white">Budget</h1>
                       <hr>
-                      <div class="form-control mt-5">
+                      <div class="form-control mt-5 w-full ">
                         <label class="input-group input-group-sm">
-                          <span class="ps-1">Per-Player</span>
-                          <input id="per-player-element" type="text" class=" input-bordered input-sm w-1/2" />
+                          <span>Per-Player</span>
+                          <input id="per-player-element" type="text" class=" input-bordered input-sm w-1/2 " />
                         </label>
                       </div>
                      
                       <button id="cal-btn" class="block btn-primary px-8 py-2 rounded-sm m-5">Calculation</button>
 
-                  
                       <p class="text-white pl-2">Player Expense : $<span id="player-expense"> </span></p>
                      
                       <div class="form-control mt-5">
@@ -164,15 +163,12 @@
                         </label>
                       </div>
                      
-                      <!-- Mananger: <input id="manager-expense"  type="text" class="" > -->
                       <div class="form-control mt-5">
                         <label class="input-group input-group-sm w-full">
                           <span class="">Coach:</span>
                           <input id="coach-expense" type="text" class=" input-bordered input-sm w-full" />
                         </label>
                       </div>
-
-                      <!-- <p >Coach: <input id="coach-expense" type="text"></p> -->
 
                       <button id="total-cal-btn" class="block btn-primary px-5 py-2 rounded-sm m-5" >Calculate Total</button>
                       
@@ -185,12 +181,14 @@
         </section>
     </main>
     <!-- footer start  -->
-    <footer class="bg-black  text-center">
+    <footer class="bg-black mt-10 text-center">
       <p class="p-10 text-white"><small > Copyright &copy || Allright Reserved 2022.</small>
       </p>
     </footer>
+    <!-- footer ends  -->
 
 
+  <!-- js link  -->
     <script src="js/selected.js"></script>
 </body>
 </html>
