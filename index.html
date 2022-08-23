@@ -13,10 +13,19 @@
 </head>
 <body>
     <!-- banner section start  -->
-    <section>
+    <section class="bg-black mb-10 flex pt-10 ">
       <div>
-        <img src="" alt="">
+        <img src="images/Group 12.png" alt="">
       </div>
+      <div class="text-center text-white">
+        <h1 class="font-bold text-5xl">Top Paying Players</h1>
+        <img src="images/Line Marker.png" alt="">
+        <p class="text-center p-8 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis velit voluptate qui, cupiditate perspiciatis dolor maxime enim delectus, deserunt mollitia neque repellat tempore, quisquam sed? Quos beatae hic odit sapiente?</p>
+      </div>
+      <div>
+        <img src="images/soccer-goal-top-png-8 4.png" alt="">
+      </div>
+
     </section>
     <!-- banner section end  -->
 
@@ -31,7 +40,7 @@
                               <h2 class="card-title">Kylian Mbappé</h2>
                               <p>Goals:36 . Assist:120</p>
                               <div class="card-actions justify-center ">
-                                <button class="btn btn-primary px-8">Select</button>
+                                <button class="btn btn-primary px-8" >Select</button>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +121,7 @@
                         <div class="card bg-base-100 shadow-xl">
                             <figure><img src="images/Rectangle 144 (2).png" alt="Kylian Mbappé " /></figure>
                             <div class="card-body">
-                              <h2 class="card-title">Kylian Mbappé</h2>
+                              <h2 class="card-title">1. Kylian Mbappé</h2>
                               <p>Goals : 36 . Assist : 120</p>
                               <div class="card-actions justify-end">
                                 <button class="btn btn-primary">Select</button>
@@ -133,31 +142,37 @@
                         </div>
                     </div>
                   </div>
-                <!-- selected five divv start  -->
+               
        
                 <div >
-                    <div id="select-five-divv">
+                   <!-- selected five divv start  -->
+                    <div id="select-five-divv" class="p-5" style="height: 300px; width: 250px; background-color: black; color:white">
                         <h1>Selected-Five</h1>
                         <hr>
-                        <ol id="players-list" >
+                        <ol id="players-list" class="list-decimal" >
                         </ol>
                     </div> 
-                    
-                </div>
-                <div>
-                  <div >
-                    <span>Per-Player: </span>
-                    <input type="number" name="" id="">
-                    <button>Calculation</button>
-                  </div>
+                     <!-- selected five divv end  -->
+
+                     <!-- calculation start  -->
+                    <div class="mt-10 p-5 w-3/4" >
+                      <p>Per-Player: <input type="text"> </p>
+                      <button id="cal-btn" class="block btn-primary px-5 m-5">Calculation</button>
+                      <p >player expense : $<span>2000</span></p>
+                      <p class="m-5 ">Mananger: <input  type="text" name="" id=""> </p>
+                      <p >coach: <input class="" type="text"></p>
+                      <button id="total-cal-btn" class="block btn-primary px-5 m-5" >Calculate Total</button>
+
+                    </div>
+                    <!-- calculation ends  -->
                 </div>
             </div>
         </section>
         
-         <!-- selected five divv end  -->
     </main>
 
     <script src="js/selected.js"></script>
+    <script src="js/test.js"></script>
 </body>
 </html>
 
